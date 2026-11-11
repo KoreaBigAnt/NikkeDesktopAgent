@@ -1,0 +1,18 @@
+{
+  "name": "nikke-desktop-agent",
+  "version": "0.1.0",
+  "private": true,
+  "description": "NIKKE Spine desktop companion for Codex",
+  "main": "src/main.cjs",
+  "scripts": {
+    "start": "electron .",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "spine40": "npm:@esotericsoftware/spine-player@4.0.31",
+    "spine41": "npm:@esotericsoftware/spine-player@4.1.56"
+  },
+  "devDependencies": {
+    "electron": "45.3.0"
+  }
+}

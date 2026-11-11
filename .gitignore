@@ -1,0 +1,7 @@
+node_modules/
+.npm-cache/
+.codex-protocol/
+.env
+.env.*
+pet-chat.json
+pet-chat.json.tmp

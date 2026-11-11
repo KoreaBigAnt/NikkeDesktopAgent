@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'">
+  <title>페르소나 설정</title>
+  <link rel="stylesheet" href="/pet.css">
+</head>
+<body class="persona-window">
+  <form id="persona-form" class="persona-form">
+    <label for="personality">성격</label>
+    <textarea id="personality" rows="3" maxlength="800" placeholder="예: 밝고 장난기 많은 친구"></textarea>
+    <label for="system-prompt">시스템 프롬프트</label>
+    <textarea id="system-prompt" rows="7" maxlength="4000" placeholder="말투, 호칭, 대화 방식 등을 입력하세요."></textarea>
+    <p>Gemini 대화부터 적용됩니다.</p>
+    <p id="persona-error" role="alert" hidden></p>
+    <footer>
+      <button id="persona-cancel" type="button">취소</button>
+      <button id="persona-save" type="submit" disabled>저장</button>
+    </footer>
+  </form>
+  <script type="module" src="/persona.mjs"></script>
+</body>
+</html>
